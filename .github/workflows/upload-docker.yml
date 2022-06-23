@@ -1,0 +1,6 @@
+on: push
+jobs:
+  docker-push:
+    runs-on: ubuntu-latest
+    steps:
+      - run: upload-docker.sh
