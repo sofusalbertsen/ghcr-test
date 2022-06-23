@@ -1,6 +1,5 @@
 IMAGE_NAME=teest
 USERNAME=sofusalbertsen
-echo $GITHUB_TOKEN | docker login ghcr.io -u $USERNAME --password-stdin
 
 docker build -f sample-packages/docker/Dockerfile -t $IMAGE_NAME .
 
